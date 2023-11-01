@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/main.dart';
+import 'package:instagram_clone/pages/my_page.dart';
 
 class FeedPage extends StatefulWidget {
   @override
@@ -65,10 +67,7 @@ class _FeedPageState extends State<FeedPage> {
                         _currentPage = index;
                       });
                     },
-                    children: [
-                      Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2TS5E_z1bPd3XUvg2uwYTEJM1BMtE145yA7AvnGdEjjiRNZrxBdPAVkhfO2BH8FvTQCk&usqp=CAU', fit: BoxFit.cover,),
-                      Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy359-pcpDNHVQVptP04eGbx2mygdIf3syaaJkc_1vsZNJ2TYutjKvjdBjhPl4bt4WeCY&usqp=CAU', fit: BoxFit.cover,),
-                    ],
+                    children: Images.map((imageUrl) => InstagramPostItem(imageUrl: imageUrl)).toList(),
                   ),
                 ),
                 Row(

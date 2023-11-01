@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/main.dart';
 
 class MyPage extends StatelessWidget {
   MyPage({Key? key}) : super(key: key);
-  final Images = [
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2TS5E_z1bPd3XUvg2uwYTEJM1BMtE145yA7AvnGdEjjiRNZrxBdPAVkhfO2BH8FvTQCk&usqp=CAU',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy359-pcpDNHVQVptP04eGbx2mygdIf3syaaJkc_1vsZNJ2TYutjKvjdBjhPl4bt4WeCY&usqp=CAU'
-  ];
+  
 
   @override
   Widget build(BuildContext context) {
